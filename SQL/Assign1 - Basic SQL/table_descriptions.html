@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../../dlcourses_stylesheet.css" type="text/css" rel="stylesheet" />
+<link href="../../SyntaxHighlighter/styles/shCore.css" type=text/css rel=stylesheet></link>
+<link type="text/css" rel="Stylesheet" href="../../SyntaxHighlighter/styles/shThemeDefault.css"/>
+
+<script language=javascript    type="text/javascript" src="../../SyntaxHighlighter/src/shCore.js"></script>
+<script language=javascript    type="text/javascript" src="../../SyntaxHighlighter/scripts/shBrushSql.js"></script>
+<script language=javascript    type="text/javascript" src="../../SyntaxHighlighter/src/shLegacy.js"></script>
+<script type="text/javascript" language="javascript">
+		SyntaxHighlighter.config.clipboardSwf = '../../SyntaxHighlighter/scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+</script>
+<title>Relational Tables for SQL Assignment</title>
+</head>
+
+<body>
+<h1>Relational Tables for SQL Assignment</h1>
+<table width="63%" border="1" align="center" cellpadding="0">
+  <tr>
+    <td>Table Name</td>
+    <td>Column Name</td>
+    <td>Data Type</td>
+    <td>Constraint</td>
+  </tr>
+  <tr>
+    <td>cen_customer</td>
+    <td>customerid</td>
+    <td>integer number</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>lastname</td>
+    <td>text; 1 to 30 characters</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>firstname</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>address</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>city</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>state</td>
+    <td>text; 2 characters only</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>ZIP</td>
+    <td>text;0 to 10 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>cen_salesperson</td>
+    <td>salespersonid</td>
+    <td>integer number</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>lastname</td>
+    <td>text; 1 to 30 characters</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>firstname</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>ssn</td>
+    <td>text; 11 characters only</td>
+    <td>required; user will enter dashes; must be unique</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>address</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>city</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>state</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>ZIP</td>
+    <td>text;0 to 10 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>hiredate</td>
+    <td>date</td>
+    <td>required default to current date</td>
+  </tr>
+  <tr>
+    <td>cen_vehicle</td>
+    <td>vin</td>
+    <td>text; 1 to 17 characters</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>make</td>
+    <td>text; up to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>model</td>
+    <td>text; up to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>vehicleyear</td>
+    <td>integer number</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>color</td>
+    <td>text; up to 10 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>suggestedprice</td>
+    <td>number with decimals</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>sold</td>
+    <td>text; 1 character</td>
+    <td>must be 'Y' or 'N'; default to 'N'</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>sale_discount</td>
+    <td>decimal number, 0 to 1</td>
+    <td>default to 0</td>
+  </tr>
+  <tr>
+    <td>cen_sale</td>
+    <td>saleid</td>
+    <td>integer number</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>customerid</td>
+    <td>integer number</td>
+    <td>required; foreign key to customer table; do not cascade</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>vin</td>
+    <td>text; 1 to 17 characters</td>
+    <td>required; foreign key to vehicle table;  do not cascade</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>salespersonid</td>
+    <td>integer number</td>
+    <td>required; foreign key to salesperson table;  do not cascade</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>datesold</td>
+    <td>date</td>
+    <td>required; default to current date</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>saleamount</td>
+    <td>number with decimals</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>taxamount</td>
+    <td>number with decimals</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>cen_mechanic</td>
+    <td>mechanicid</td>
+    <td>integer number</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>lastname</td>
+    <td>text; 1 to 30 characters</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>firstname</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>ssn</td>
+    <td>text; 11 characters only</td>
+    <td>required; user will enter dashes; must be unique</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>address</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>city</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>state</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>ZIP</td>
+    <td>text;0 to 10 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>hiredate</td>
+    <td>date</td>
+    <td>required default to current date</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>baserate</td>
+    <td>number with decimals</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>cen_repair</td>
+    <td>repairid</td>
+    <td>integer number</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>description</td>
+    <td>text; 0 to 50 characters</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>standardhours</td>
+    <td>number with decimals</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>category</td>
+    <td>text; 0 to 25 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>cen_repairappointment</td>
+    <td>apptid</td>
+    <td>integer number</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>vin</td>
+    <td>text; 1 to 17 characters</td>
+    <td>required; foreign key to vehicle</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>customerid</td>
+    <td>integer number</td>
+    <td>required; foreign key to customer</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>mechanicid</td>
+    <td>integer number</td>
+    <td>required; foreign key to mechanic</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>repairid</td>
+    <td>integer number</td>
+    <td>required; foreign key to repair</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>appt_date_time</td>
+    <td>date</td>
+    <td>required</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>reason</td>
+    <td>text; 0 to 30 characters</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>date_time_completed</td>
+    <td>date</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+</body>
+</html>
